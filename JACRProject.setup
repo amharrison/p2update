@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+    name="jactr.ide"
+    label="jACT-R IDE">
+  <setupTask
+      xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.eclipse.nebula.feature.feature.group"/>
+    <requirement
+        name="org.commonreality.osgi.feature.feature.group"/>
+    <requirement
+        name="org.commonreality.osgi.feature.source.feature.group"/>
+    <requirement
+        name="org.jactr.osgi.feature.feature.group"/>
+    <requirement
+        name="org.jactr.io2.jactr.feature.feature.group"/>
+    <requirement
+        name="org.jactr.io2.jactr.feature.source.feature.group"/>
+    <requirement
+        name="org.jactr.eclipse.feature.feature.group"/>
+    <requirement
+        name="mil.navy.nrl.ncarai.jasm.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.collections.feature.feature.group"
+        versionRange="[11.1.0.v20220705-1455,11.1.0.v20220705-1455]"/>
+    <requirement
+        name="org.slf4j.api"
+        versionRange="[1.7.30.v20221112-0806,1.7.30.v20221112-0806]"/>
+    <requirement
+        name="org.eclipse.xtext.sdk.feature.group"/>
+    <requirement
+        name="markdown.editor.feature.feature.group"/>
+    <repository
+        url="https://amharrison.github.io/p2update/"/>
+    <repository
+        url="https://amharrison.github.io/p2update/io2/"/>
+    <repository
+        url="https://amharrison.github.io/p2update/ide/"/>
+    <repository
+        url="https://download.eclipse.org/nebula/releases/latest/"/>
+    <repository
+        url="https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository"/>
+    <repository
+        url="https://amharrison.github.io/p2update/jass/"/>
+    <repository
+        url="https://download.eclipse.org/releases/latest"/>
+    <repository
+        url="https://download.eclipse.org/releases/2023-12"/>
+    <repository
+        url="https://download.eclipse.org/eclipse/updates/latest"/>
+    <repository
+        url="http://winterwell.com/software/updatesite/"/>
+  </setupTask>
+  <stream name="master"
+      label="Master"/>
+  <logicalProjectContainer
+      xsi:type="setup:ProjectCatalog"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+  <description>jACT-R IDE provides core and tooling for ACT-R cognitive models.</description>
+</setup:Project>
