@@ -2,12 +2,16 @@
 <?compositeArtifactRepository version='1.0.0'?>
 <repository name='&quot;jACT-R Composite Site&quot; 2.5.x' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1701888360179'/>
+    <property name='p2.timestamp' value='1701892915367'/>
     <property name='p2.atomic.composite.loading' value='false'/>
   </properties>
-  <children size='3'>
+  <children size='7'>
     <child location='../../../releases/2.5.1.v20231206-1845'/>
     <child location='https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository'/>
     <child location='https://download.eclipse.org/collections/10.4.0/repository'/>
+    <child location='../../../releases/2.5.1.v20231206-2001'/>
+    <child location='https://amharrison.github.io/p2update/ide/'/>
+    <child location='https://amharrison.github.io/p2update/io2/'/>
+    <child location='https://amharrison.github.io/p2update/jass/'/>
   </children>
 </repository>
